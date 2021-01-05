@@ -8,7 +8,7 @@ function Tarea ({ tarea, eliminarTarea }){
  
   return (
   <div className="tareas">
-    <div className="tarea-nueva">{tarea.task}</div>
+    <div className="tarea-nueva">{tarea.label}</div>
     <div className="cerrar" onClick={borrarTareaClick}>x</div>
   </div>
  );
