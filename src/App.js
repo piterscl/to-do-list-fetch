@@ -6,7 +6,7 @@ import ListaTarea from "./components/ListaTarea";
 function App() {
   const [tareas, setTarea] = useState ([{ label: "", done: false }]);
 
-/*  function  agregarTarea (tarea) {
+/*function  agregarTarea (tarea) {
     setTarea([tarea,...tareas]);
   }*/
  
@@ -14,7 +14,7 @@ function App() {
     setTarea(tareas.filter(tarea => tarea.id !== id));
   }
 
-const agregarTarea = () => {
+const agregarTarea = (tarea) => {
 		fetch("https://assets.breatheco.de/apis/fake/todos/user/piterscl", {
 			method: "GET",
 			headers: {
